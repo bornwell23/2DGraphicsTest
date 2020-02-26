@@ -1,14 +1,14 @@
 import java.awt.*;
 
-public class player {
+public class NPC {
     public int score = 0;
-    public int x = game.dimX/2;
-    public int y = (game.dimY/4);
+    public int x = (game.dimX/4)*3;
+    public int y = game.dimY/2;
     public int speed = 5;
-    public Color color = Color.WHITE;
+    public Color color = Color.GRAY;
 
-    player(){
-        System.out.println("Player created");
+    NPC(){
+        System.out.println("NPC created");
     }
 
     public void move(int direction){
@@ -24,5 +24,13 @@ public class player {
         else if(direction==4 && x>5){ //left
             x-=speed;
         }
+    }
+
+    public void findGreatestConcentration(){
+
+    }
+
+    public void follow(){
+
     }
 }
